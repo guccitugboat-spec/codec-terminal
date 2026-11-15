@@ -1,0 +1,49 @@
+{
+    "statusLine":  {
+                       "type":  "command",
+                       "command":  "powershell -NoProfile -ExecutionPolicy Bypass -File \"%USERPROFILE%\\.claude\\codec\\statusline.ps1\"",
+                       "refreshInterval":  1
+                   },
+    "outputStyle":  "Codec",
+    "hooks":  {
+                  "Notification":  [
+                                       {
+                                           "hooks":  [
+                                                         {
+                                                             "type":  "command",
+                                                             "command":  "powershell -NoProfile -ExecutionPolicy Bypass -File \"%USERPROFILE%\\.claude\\codec\\alert.ps1\" -Kind alert",
+                                                             "shell":  "powershell",
+                                                             "timeout":  10
+                                                         }
+                                                     ]
+                                       }
+                                   ],
+                  "Stop":  [
+                               {
+                                   "hooks":  [
+                                                 {
+                                                     "type":  "command",
+                                                     "command":  "powershell -NoProfile -ExecutionPolicy Bypass -File \"%USERPROFILE%\\.claude\\codec\\alert.ps1\" -Kind clear",
+                                                     "shell":  "powershell",
+                                                     "timeout":  10
+                                                 }
+                                             ]
+                               }
+                           ]
+              },
+    "spinnerVerbs":  {
+                         "mode":  "replace",
+                         "verbs":  [
+                                       "Infiltrating",
+                                       "Sneaking",
+                                       "Scanning the area",
+                                       "Hiding in a box",
+                                       "Radioing support",
+                                       "Avoiding detection",
+                                       "Cracking the lock",
+                                       "Extracting intel",
+                                       "Calling in support",
+                                       "Holding position"
+                                   ]
+                     }
+}

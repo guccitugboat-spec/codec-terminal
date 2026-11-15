@@ -1,0 +1,76 @@
+{
+    "defaultProfile":  "{c0dec141-10c1-4a7e-9b3d-6c0de1091a01}",
+    "launchMode":  "maximized",
+    "startOnUserLogin":  true,
+    "schemes":  [
+                    {
+                        "background":  "#0D1712",
+                        "black":  "#0D1712",
+                        "blue":  "#6FA8DC",
+                        "brightBlack":  "#5E7A68",
+                        "brightBlue":  "#9CC4EC",
+                        "brightCyan":  "#8FDCCB",
+                        "brightGreen":  "#8EE3A6",
+                        "brightPurple":  "#C9A8E0",
+                        "brightRed":  "#F28B82",
+                        "brightWhite":  "#F1F7F2",
+                        "brightYellow":  "#F5D27A",
+                        "cursorColor":  "#8EE3A6",
+                        "cyan":  "#6CC4B3",
+                        "foreground":  "#D3E4D8",
+                        "green":  "#5FBF7F",
+                        "name":  "Codec Green",
+                        "purple":  "#A98BC4",
+                        "red":  "#E06C6C",
+                        "selectionBackground":  "#2C4A38",
+                        "white":  "#C2D6C8",
+                        "yellow":  "#E0B44F"
+                    }
+                ],
+    "profiles":  {
+                     "defaults":  {
+                                      "elevate":  true,
+                                      "colorScheme":  "Codec Green",
+                                      "font":  {
+                                                   "face":  "Cascadia Mono",
+                                                   "size":  13,
+                                                   "cellHeight":  "1.25"
+                                               },
+                                      "padding":  "14, 12, 14, 12",
+                                      "cursorShape":  "bar",
+                                      "opacity":  100,
+                                      "useAcrylic":  false,
+                                      "adjustIndistinguishableColors":  "always",
+                                      "intenseTextStyle":  "bright",
+                                      "scrollbarState":  "visible",
+                                      "historySize":  20000,
+                                      "experimental.pixelShaderPath":  "%USERPROFILE%\\.claude\\codec\\matrix.hlsl"
+                                  },
+                     "list":  [
+                                  {
+                                      "commandline":  "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -NoLogo -NoProfile -ExecutionPolicy Bypass -File \"%USERPROFILE%\\.claude\\codec\\login.ps1\"",
+                                      "guid":  "{c0dec141-10c1-4a7e-9b3d-6c0de1091a01}",
+                                      "hidden":  false,
+                                      "name":  "Codec Login",
+                                      "startingDirectory":  "%USERPROFILE%",
+                                      "tabTitle":  "CODEC // Secure Link",
+                                      "suppressApplicationTitle":  true
+                                  },
+                                  {
+                                      "commandline":  "%SystemRoot%\\System32\\cmd.exe /c \"claude \u0026 powershell -NoProfile -ExecutionPolicy Bypass -File %USERPROFILE%\\.claude\\codec\\outro.ps1\"",
+                                      "guid":  "{c0dec140-8500-4c1a-9d2e-5a1b2c3d4e5f}",
+                                      "hidden":  false,
+                                      "name":  "Claude Code",
+                                      "startingDirectory":  "%USERPROFILE%",
+                                      "tabTitle":  "CODEC // Claude",
+                                      "suppressApplicationTitle":  true
+                                  },
+                                  {
+                                      "commandline":  "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -NoLogo -NoExit -ExecutionPolicy Bypass -File \"%USERPROFILE%\\.claude\\codec\\banner.ps1\"",
+                                      "guid":  "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                                      "hidden":  false,
+                                      "name":  "Windows PowerShell"
+                                  }
+                              ]
+                 }
+}

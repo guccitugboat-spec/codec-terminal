@@ -1,0 +1,4 @@
+codec/login.dat
+codec/weather.txt
+codec/weather.attempt
+*.bak*
